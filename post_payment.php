@@ -35,26 +35,26 @@ $payment_preference = array(
             )
         ),
         "payer"=>  array( //INFORMAÇÕES PESSOAIS DO COMPRADOR
-            "first_name"=> "João",
-            "last_name"=> "das Neves",
-            "registration_date"=> "2014-06-28T16:53:03.176-04:00",
-            "phone"=>  array(
-                "area_code"=> "11",
-                "number"=> "3222-1000"
+            "first_name"=> "João", //NOME DO COMPRADOR
+            "last_name"=> "das Neves", //SOBRENOME DO COMPRADOR
+            "registration_date"=> "2014-06-28T16:53:03.176-04:00", //DATA EM QUE O COMPRADOR FOI CADASTRADO COMO CLIENTE
+            "phone"=>  array( //CONTATO TELEFÔNICO DO COMPRADOR
+                "area_code"=> "11", //DDD DO TELEFONE DO COMPRADOR
+                "number"=> "3222-1000" //NÚMERO DO TELEFONE DO COMPRADOR
             ),
-            "address"=>  array(
-                "zip_code"=> "05303-090",
-                "street_name"=> "Av. Queiroz Filho",
-                "street_number"=> "213"
+            "address"=>  array( //ENDEREÇO DO COMPRADOR
+                "zip_code"=> "05303-090", //CEP DO COMPRADOR
+                "street_name"=> "Av. Queiroz Filho", //NOME DA RUA DO COMPRADOR
+                "street_number"=> "213" //NUMERO DA CASA DO COMPRADOR
             )
         ),
         "shipments"=>  array( //INFORMAÇÕES DO LOCAL ONDE O ITEM SERÁ ENTREGUE
             "receiver_address"=>  array(
-                "zip_code"=> "05303-090",
-                "street_name"=> "Av. Queiroz Filho",
-                "street_number"=> "213",
-                "floor"=> "1",
-                "apartment"=> "20"
+                "zip_code"=> "05303-090", //CEP DA ENTREGA
+                "street_name"=> "Av. Queiroz Filho", //RUA DA ENTREGA
+                "street_number"=> "213", //NUMERO DA ENTREGA
+                "floor"=> "1", //ANDAR DA ENTREGA
+                "apartment"=> "20" //APARTAMENTO DA ENTREGA
             )
         )
     )
