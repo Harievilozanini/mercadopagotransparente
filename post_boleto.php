@@ -26,6 +26,7 @@ $payment_preference = array(
                 "street_name"=> "Av. Queiroz Filho", //RUA DO COMPRADOR
                 "street_number"=> "213" //NÚMERO DO COMPRADOR
                 "neighborhood"=> "Bonfim" //BAIRRO DO COMPRADOR
+                "city"=> "Osasco" //CIDADE DO COMPRADOR
                 "federal_unit"=> "SP" //UNIDADE FEDERATIVA RESUMIDA EM SIGLA DO COMPRADOR
         )
     ),
