@@ -12,6 +12,7 @@ $payment_preference = array(
     "transaction_amount"=> 200.00, //VALOR TOTAL A SER PAGO PELO COMPRADOR.
     "external_reference"=> "PEDIDO-123456", //NUMERO DO PEDIDO DE SEU SITE PARA FUTURA CONCILIAÇÃO FINANCEIRA.
     "description"=> "Boleto Registrado na CIP conforme Febraban", //DESCRIÇÃO DO CARRINHO OU ITEM VENDIDO.
+    "notification_url"=> "http://www.minhaloja.com.br/webhooks", //ENDEREÇO EM SEU SISTEMA POR ONDE DESEJA RECEBER AS NOTIFICAÇÕES DE STATUS: https://www.mercadopago.com.br/developers/pt/guides/notifications/webhooks/
     "payment_method_id"=> "bolbradesco", //MEIO DE PAGAMENTO ESCOLHIDO.
     "payer"=> array( //DADOS ESSENCIAIS PARA REGISTRO DO BOLETO
         "email"=> "comprador+272110086@mercadopago.com" //EMAIL DO COMPRADOR
