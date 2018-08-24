@@ -23,6 +23,7 @@ $payment_preference = array(
         "email"=> "comprador+272110086@mercadopago.com" //E-MAIL DO COMPRADOR
     ),
     "additional_info"=>  array(  // DADOS ESSENCIAIS PARA ANÁLISE ANTI-FRAUDE
+        "ip_address" => "200.42.23.3", //IP DE ONDE PARTIU A REQUISIÇÃO DE PAGAMENTO
         "items"=> array(array( //PARA CADA ITEM QUE ESTÁ SENDO VENDIDO É CRIADO UM ARRAY DENTRO DESTE ARRAY PAI COM AS INFORMAÇÕES DESCRITAS ABAIXO
             
                 "id"=> "1234", //CÓDIGO IDENTIFICADOR DO SEU PRODUTO
