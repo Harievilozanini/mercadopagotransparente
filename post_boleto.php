@@ -8,26 +8,26 @@ require_once "lib/mercadopago.php";
 $mp = new MP("TEST-7625375352946474-090614-a51a4517585fa1218244fba2538b2913__LC_LB__-272109853"); //INSIRA SEU ACCESS_TOKEN DISPONÍVEL EM: https://www.mercadopago.com/mlb/account/credentials
 
 $payment_preference = array(
-    "date_of_expiration": "2017-12-20T23:59:59.000-04:00", //CAMPO OPCIONAL ONDE SE DEFINE O PRAZO DESEJADO PARA O PAGAMENTO DO BOLETO (DATA VENCIMENTO), APÓS ESTE PRAZO O PAGAMENTO NÃO SERÁ MAIS ACEITO, O PRAZO NÃO PODE SER SUPERIOR A 29 DIAS A PARTIR DA DATA DE CRIAÇÃO DO PAGAMENTO, NÃO INFORMANDO ESTE CAMPO VALE O PADRÃO DE 3 DIAS.
-    "transaction_amount"=> 200.00, //VALOR TOTAL A SER PAGO PELO COMPRADOR.
-    "external_reference"=> "PEDIDO-123456", //NUMERO DO PEDIDO DE SEU SITE PARA FUTURA CONCILIAÇÃO FINANCEIRA.
-    "description"=> "Boleto Registrado na CIP conforme Febraban", //DESCRIÇÃO DO CARRINHO OU ITEM VENDIDO.
-    "notification_url"=> "http://www.minhaloja.com.br/webhooks", //ENDEREÇO EM SEU SISTEMA POR ONDE DESEJA RECEBER AS NOTIFICAÇÕES DE STATUS: https://www.mercadopago.com.br/developers/pt/guides/notifications/webhooks/
-    "payment_method_id"=> "bolbradesco", //MEIO DE PAGAMENTO ESCOLHIDO.
+    "date_of_expiration": "2017-12-20T23:59:59.000-04:00", //CAMPO OPCIONAL ONDE SE DEFINE O PRAZO DESEJADO PARA O PAGAMENTO DO BOLETO (DATA VENCIMENTO), APÓS ESTE PRAZO O PAGAMENTO NÃO SERÁ MAIS ACEITO, O PRAZO NÃO PODE SER SUPERIOR A 29 DIAS A PARTIR DA DATA DE CRIAÇÃO DO PAGAMENTO, NÃO INFORMANDO ESTE CAMPO VALE O PADRÃO DE 3 DIAS
+    "transaction_amount"=> 200.00, //VALOR TOTAL A SER PAGO PELO COMPRADOR
+    "external_reference"=> "PEDIDO-123456", //NUMERO DO PEDIDO DE SEU SITE PARA FUTURA CONCILIAÇÃO FINANCEIRA
+    "description"=> "Boleto Registrado na CIP conforme Febraban", //DESCRIÇÃO DO CARRINHO OU ITEM VENDIDO
+    "notification_url"=> "http://www.minhaloja.com.br/webhooks", //ENDEREÇO EM SEU SISTEMA POR ONDE DESEJA RECEBER AS NOTIFICAÇÕES DE STATUS: httpsSEJA RECEBER AS NOTIFICAÇÕES DE STATUS: https://www.mercadopago.com.br/developers/pt/guides/notifications/webhooks/://www.mercadopago.com.br/developers/pt/guides/notifications/webhooks/
+    "payment_method_id"=> "bolbradesco", //MEIO DE PAGAMENTO ESCOLHIDO
     "payer"=> array( //DADOS ESSENCIAIS PARA REGISTRO DO BOLETO
-        "email"=> "comprador+272110086@mercadopago.com" //EMAIL DO COMPRADOR
+        "email"=> "comprador+272110086@mercadopago.com", //EMAIL DO COMPRADOR
         "first_name"=> "João", //PRIMEIRO NOME DO COMPRADOR
         "last_name"=> "Silva", //SOBRENOME DO COMPRADOR, OPCIONAL SE FOR PESSOA JURIDICA
         "identification"=> array( //DADOS DE IDENTIFICAÇÃO DO COMPRADOR
-                "type"=>"CPF" //TIPO DE DOCUMENTO, CPF OU CNPJ CASO BRASIL
+                "type"=>"CPF", //TIPO DE DOCUMENTO, CPF OU CNPJ CASO BRASIL
                 "number"=>"19119119100" //NUMERAÇÃO DO DOCUMENTO INFORMADO
         ),
         "address"=>  array( //ENDEREÇO DO COMPRADOR
                 "zip_code"=> "05303-090", //CEP DO COMPRADOR
                 "street_name"=> "Av. Queiroz Filho", //RUA DO COMPRADOR
-                "street_number"=> "213" //NÚMERO DO COMPRADOR
-                "neighborhood"=> "Bonfim" //BAIRRO DO COMPRADOR
-                "city"=> "Osasco" //CIDADE DO COMPRADOR
+                "street_number"=> "213", //NÚMERO DO COMPRADOR
+                "neighborhood"=> "Bonfim", //BAIRRO DO COMPRADOR
+                "city"=> "Osasco", //CIDADE DO COMPRADOR
                 "federal_unit"=> "SP" //UNIDADE FEDERATIVA RESUMIDA EM SIGLA DO COMPRADOR
         )
     ),
